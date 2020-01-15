@@ -1,13 +1,27 @@
 // pages/home/home.js
 Page({
-
+  onShareAppMessage() {
+    return {
+      title: 'swiper',
+      path: 'page/component/pages/swiper/swiper'
+    }
+  },
   /**
    * 页面的初始数据
    */
   data: {
     count:2020,
     list: ["付雨田","华晟","何长健","王磊","何博"],
-    flag:!!0
+    flag:!!0,
+    "bnrUrl": [{
+      "url": "https://zuozhaoxi.com/base/img/1.jpg"
+    }, {
+        "url": "https://zuozhaoxi.com/base/img/2.jpg"
+    }, {
+        "url": "https://zuozhaoxi.com/base/img/3.jpg"
+    }, {
+        "url": "https://zuozhaoxi.com/base/img/4.jpg"
+    }]
   },
   changeFlag(){
     this.setData({
