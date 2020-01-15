@@ -1,0 +1,17 @@
+<!--pages/home/home.wxml-->
+  <view>
+    <text>home-home-主页</text>
+  </view>
+  <view>
+    <text>count----{{count}}</text>
+  </view>
+  <view wx:for="{{list}}" wx:key="index">
+    <view>{{item}}</view>
+  </view>
+  <view wx:if="{{flag}}">
+    今天发年终奖了,很高兴
+  </view>
+  <view wx:else>
+    马上过年了,我们要上线小程序
+  </view>
+  <button class="btn" type="warn" bindtap="changeFlag" inline>点击修改</button>

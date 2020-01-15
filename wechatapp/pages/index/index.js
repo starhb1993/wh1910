@@ -7,7 +7,14 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    word:"wuhan1910-daydayup",
+    message:"Are you ok"
+  },
+  gotohome(){
+    wx.navigateTo({
+      url: '../home/home?id=1234',
+    })
   },
   //事件处理函数
   bindViewTap: function() {
